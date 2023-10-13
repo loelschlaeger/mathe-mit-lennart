@@ -1,9 +1,5 @@
 ---
 title: "Kommutativgesetz"
-listing:
-  contents: content/rechenregeln
-  type: grid
-  image-height: "0"
 ---
 
 Rechenoperationen, bei denen die Argumente vertauscht werden können, ohne dass sich das Ergebnis verändert, nennt man *kommutativ*. 

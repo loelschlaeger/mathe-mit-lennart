@@ -3,14 +3,19 @@ project:
   output-dir: docs
 
 website:
+  title: "Mathe mit Lennart"
   navbar:
     search: true
+    left:
+      - href: index.qmd
+        text: Themen
+      - about.qmd
   search: 
-    type: overlay
+    type: textbox
     limit: 3
   repo-url: https://github.com/loelschlaeger/mathe-mit-lennart
   repo-actions: [edit, issue]
-  page-footer: "© 2023, Lennart Oelschläger" 
+  page-footer: "© 2023 Lennart Oelschläger" 
   back-to-top-navigation: true
 
 format:

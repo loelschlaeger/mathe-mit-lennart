@@ -1,9 +1,5 @@
 ---
 title: "Assoziativgesetz"
-listing:
-  contents: rechenregeln
-  type: grid
-  image-height: "0"
 ---
 
 Rechenoperationen, bei denen die Klammerung keinen Einfluss auf das Ergebnis hat, nennt man *assoziativ*. 
