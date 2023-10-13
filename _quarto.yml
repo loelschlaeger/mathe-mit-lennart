@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  navbar:
+    search: true
+  search: 
+    type: overlay
+    limit: 3
+  repo-url: https://github.com/loelschlaeger/mathe-mit-lennart
+  repo-actions: [edit, issue]
+  page-footer: "Copyright 2023, Lennart Oelschläger" 
+  back-to-top-navigation: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

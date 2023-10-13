@@ -1,0 +1,17 @@
+---
+title: "Kommutativgesetz"
+listing:
+  contents: content/rechenregeln
+  type: grid
+  image-height: "0"
+---
+
+Für beliebige Zahlen $a$ und $b$ gilt $$a + b = b + a$$ und $$a \cdot b = b \cdot a.$$
+
+Man sagt dazu, dass Addition und Multiplikation *kommutativ* sind. 
+
+::: {.callout-caution collapse="true"}
+## Gilt das auch für Subtraktion und Division?
+
+Nein, denn zum Beispiel $$1-2 = -1 \neq 1 = 2-1$$ und $$1:2 = 0.5 \neq 2 = 2:1.$$
+:::

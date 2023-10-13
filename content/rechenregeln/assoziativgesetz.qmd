@@ -1,0 +1,17 @@
+---
+title: "Assoziativgesetz"
+listing:
+  contents: rechenregeln
+  type: grid
+  image-height: "0"
+---
+
+Rechenoperationen, bei denen die Klammerung keinen Einfluss auf das Ergebnis hat, nennt man *assoziativ*. 
+
+Das gilt wie beim [Kommutativgesetz](kommutativgesetz.qmd) für Addition und Multiplikation, aber nicht für Subtraktion und Division: $a + b + c = a + (b + c) = (a + b) + c$ und $a \cdot b \cdot c = a \cdot (b \cdot c) = (a \cdot b) \cdot c$.^[Wenn Variablen im Spiel sind werden die Multiplikationspunkte häufig weggelassen: $a \cdot b = ab$. Bei zwei Zahlen führt das aber zu Verwirrung: $3 \cdot 3 \neq 33$.]
+
+::: {.callout-caution collapse="true"}
+## Gegenbeispiele, dass Subtraktion und Division nicht assoziativ sind?
+
+Zum Beispiel $1-(2-3) = 2 \neq -4 = (1-2)-3$ und $8:(4:2) = 4 \neq 1 = (8:4):2$.
+:::

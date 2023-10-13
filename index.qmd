@@ -1,0 +1,7 @@
+---
+title: "Start"
+listing:
+  contents: content
+  type: grid
+  image-height: "0"
+---
