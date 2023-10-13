@@ -5,23 +5,24 @@ project:
 website:
   title: "Mathe mit Lennart"
   navbar:
-    search: true
-    left:
-      - href: index.qmd
-        text: Themen
-      - about.qmd
+    pinned: true
+    right:
+      - icon: youtube
+        href: https://www.youtube.com/@mathe-mit-lennart
+        aria-label: YouTube
+  site-url: https://loelschlaeger.de/mathe-mit-lennart
+  page-footer:
+    center: 
+      - text: "© 2023 Lennart Oelschläger"
+        href: https://loelschlaeger.de
   search: 
     type: textbox
     limit: 3
   repo-url: https://github.com/loelschlaeger/mathe-mit-lennart
   repo-actions: [edit, issue]
-  page-footer: "© 2023 Lennart Oelschläger" 
-  back-to-top-navigation: true
 
 format:
   html:
     theme: cosmo
-    css: styles.css
-    toc: true
 
 
