@@ -1,0 +1,17 @@
+[
+  {
+    "listing": "/content/rechenregeln/assoziativgesetz.html",
+    "items": []
+  },
+  {
+    "listing": "/content/rechenregeln/kommutativgesetz.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/content/rechenregeln/assoziativgesetz.html",
+      "/content/rechenregeln/kommutativgesetz.html"
+    ]
+  }
+]
