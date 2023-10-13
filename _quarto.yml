@@ -18,9 +18,5 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-    
-execute:
-  freeze: auto
-
 
 
