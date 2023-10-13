@@ -10,7 +10,7 @@ website:
     limit: 3
   repo-url: https://github.com/loelschlaeger/mathe-mit-lennart
   repo-actions: [edit, issue]
-  page-footer: "Copyright 2023, Lennart Oelschläger" 
+  page-footer: "© 2023, Lennart Oelschläger" 
   back-to-top-navigation: true
 
 format:
@@ -18,6 +18,9 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    
+execute:
+  freeze: auto
 
 
 
