@@ -3,7 +3,8 @@
     "listing": "/index.html",
     "items": [
       "/content/rechenregeln/assoziativgesetz.html",
-      "/content/rechenregeln/kommutativgesetz.html"
+      "/content/rechenregeln/kommutativgesetz.html",
+      "/content/lineare-algebra/matrixrang.html"
     ]
   }
 ]

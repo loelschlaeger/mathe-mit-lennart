@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mathe mit Lennart - Kommutativgesetz</title>
+<title>Mathe mit Lennart - Matrixrang</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Kommutativgesetz</h1>
+<h1 class="title">Matrixrang</h1>
 </div>
 
 
@@ -106,27 +106,87 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Rechenoperationen, bei denen die Argumente vertauscht werden können, ohne dass sich das Ergebnis verändert, nennt man <em>kommutativ</em>.</p>
-<p>Für beliebige Zahlen <span class="math inline">\(a\)</span> und <span class="math inline">\(b\)</span> gilt <span class="math display">\[a + b = b + a\]</span> und <span class="math display">\[a \cdot b = b \cdot a.\]</span></p>
-<p>Man sagt dazu, dass Addition und Multiplikation <em>kommutativ</em> sind.</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="yt-container">
+<p><iframe class="responsive-iframe" src="https://www.youtube.com/watch?v=s3DsaxGUfyI" frameborder="0"></iframe></p>
 </div>
-<div class="callout-title-container flex-fill">
-Gilt das auch für Subtraktion und Division?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Nein, denn zum Beispiel <span class="math display">\[1-2 = -1 \neq 1 = 2-1\]</span> und <span class="math display">\[1:2 = 0.5 \neq 2 = 2:1.\]</span></p>
-</div>
-</div>
-</div>
+<section id="was-ist-der-rang-einer-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="was-ist-der-rang-einer-matrix">Was ist der Rang einer Matrix?</h2>
+<p>Der Rang einer Matrix ist eine positive ganze Zahl und kann auch <span class="math inline">\(0\)</span> sein. Zum Beispiel ist der Rang der Matrix <span class="math inline">\(A = \begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 2 \end{pmatrix}\)</span> gleich <span class="math inline">\(1\)</span>. Und der Rang der Matrix <span class="math inline">\(B = \begin{pmatrix} 1 &amp; 2 \\ 0 &amp; 2 \end{pmatrix}\)</span> ist gleich <span class="math inline">\(2\)</span>. Und der Rang der Matrix <span class="math inline">\(C = \begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}\)</span> ist <span class="math inline">\(0\)</span>. Eine Matrix mit nur Nullen (eine Nullmatrix) hat immer den Rang <span class="math inline">\(0\)</span>, ganz gleich ihrer Dimension. Und zusätzlich ist die Nullmatrix die einzige Matrix mit Rang <span class="math inline">\(0\)</span>. Sobald eine Zahl ungleich Null in der Matrix auftaucht, hat sie mindestens den Rang <span class="math inline">\(1\)</span>. Hochgestochen können wir sagen, dass der Rang eine Funktion ist, die eine Matrix auf eine Zahl abbildet. Die gesamte Matrix wird auf eine einzige Zahl reduziert. Aber was für eine Information steckt in dieser Zahl?</p>
+</section>
+<section id="was-will-uns-der-rang-mitteilen" class="level2">
+<h2 class="anchored" data-anchor-id="was-will-uns-der-rang-mitteilen">Was will uns der Rang mitteilen?</h2>
+<p>Der Rang einer Matrix beschreibt den Informationsgehalt: je höher der Rang, desto mehr Informationen, und umgekehrt. Der Rang von <span class="math inline">\(A = \begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 2 \end{pmatrix}\)</span> ist <span class="math inline">\(1\)</span>, das bedeutet?</p>
+<ul>
+<li><p><span class="math inline">\(A\)</span> hat zwar zwei Spalten, aber da <span class="math inline">\(2 \cdot \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 2 \\ 2 \end{pmatrix}\)</span> gilt, gibt uns die zweite Spalte keine zusätzliche Information. Man sagt dazu, dass die Spaltenvektoren linear abhängig sind. Spalte zwei wird perfekt durch die erste beschrieben (und umgekehrt), wozu brauchen wir dann beide?</p></li>
+<li><p>Auch hat <span class="math inline">\(A\)</span> zwar zwei Zeilen, aber die sind identisch, also gibt uns nur eine Zeile Informationen.</p></li>
+</ul>
+<p>Anders sieht es bei <span class="math inline">\(B = \begin{pmatrix} 1 &amp; 2 \\ 0 &amp; 2 \end{pmatrix}\)</span> aus: hier bieten beide Spalten (beziehungsweise Zeilen) unabhängig Informationen an. Der Rang von <span class="math inline">\(B\)</span> ist <span class="math inline">\(2\)</span>.</p>
+</section>
+<section id="wie-wird-nun-der-matrixrang-definiert" class="level2">
+<h2 class="anchored" data-anchor-id="wie-wird-nun-der-matrixrang-definiert">Wie wird nun der Matrixrang definiert?</h2>
+<p>Der Rang einer Matrix …</p>
+<ul>
+<li><p>ist die maximale Anzahl linear unabhängiger Spalten.</p></li>
+<li><p>Das ist das Gleiche wie die maximale Anzahl linear unabhängiger Zeilen.</p></li>
+<li><p>Zum Beispiel bei <span class="math inline">\(\begin{pmatrix} 1 &amp; 4 &amp; 5\\ 2 &amp; 3 &amp; 5 \\ 3 &amp; 2 &amp; 5\\ 4 &amp; 1 &amp; 5 \end{pmatrix}\)</span> sind das jeweils <span class="math inline">\(2\)</span>. Addieren wir die erste und die zweite Spalte, so erhalten wir die dritte Spalte. Zum Glück ist es egal, ob wir die Spalten oder die Zeilen auf Unabhängigkeit prüfen, denn hier ist es nicht offensichtlich, dass wir nur zwei linear unabhängige Zeilen finden können. Da aber Zeilenrang und Spaltenrang identisch sind, kann es auch nur zwei linear unabhängige Zeilen geben.</p></li>
+<li><p>Der Rang einer <span class="math inline">\(n \times m\)</span> Matrix ist also höchstens das Minimum aus <span class="math inline">\(n\)</span> und <span class="math inline">\(m\)</span>. Wenn das der Fall ist, sagt man, dass die Matrix vollen Rang hat.</p></li>
+<li><p>Spezialfall: Der Rang einer Matrix mit einer Zeile oder einer Spalte ist immer <span class="math inline">\(1\)</span>, sofern mindestens ein Eintrag ungleich <span class="math inline">\(0\)</span> ist, sonst ist der Rang <span class="math inline">\(0\)</span>.</p></li>
+</ul>
+</section>
+<section id="wie-bestimmt-man-den-matrixrang" class="level2">
+<h2 class="anchored" data-anchor-id="wie-bestimmt-man-den-matrixrang">Wie bestimmt man den Matrixrang?</h2>
+<p>Der Rang einer Matrix können wir immer in zwei Schritten bestimmen:</p>
+<ol type="1">
+<li><p>Bringe die Matrix mit dem Gauß-Algorithmus in Dreiecksform. Dreiecksform meint, dass alle Matrixeinträge unterhalb der Diagonale null sind.</p></li>
+<li><p>Der Rang ist dann die Anzahl der Zeilen, die nicht gleich dem Nullvektor sind. \end{enumerate}</p></li>
+</ol>
+<p>Was ist also zum Beispiel der Rang von <span class="math inline">\(\begin{pmatrix} 1 &amp; 2 &amp; 3 \\  0 &amp; 1 &amp; -2 \\  1 &amp; 0 &amp; 0 \\  2 &amp; 0 &amp; 14 \end{pmatrix}\)</span>?</p>
+<ol type="1">
+<li><p><span class="math inline">\(\begin{pmatrix} 1 &amp; 2 &amp; 3 \\  0 &amp; 1 &amp; -2 \\  1 &amp; 0 &amp; 0 \\  2 &amp; 0 &amp; 14 \end{pmatrix}  \overset{  \begin{subarray}{l}  \text{Z3 - Z1} \\ \text{Z4 - 2 $\cdot$ Z1} \\ ~  \end{subarray}  }{\sim}  \begin{pmatrix} 1 &amp; 2 &amp; 3\\  0 &amp; 1 &amp; -2\\  0 &amp; -2 &amp; -3\\  0 &amp; -4 &amp; 8 \end{pmatrix}  \overset{  \begin{subarray}{l}  \text{Z3 + 2 $\cdot$ Z2} \\ \text{Z4 + 4 $\cdot$ Z2} \\ ~  \end{subarray}  }{\sim}  \begin{pmatrix} 1 &amp; 2 &amp; 3\\  0 &amp; 1 &amp; -2\\  0 &amp; 0 &amp; -7\\  0 &amp; 0 &amp; 0 \end{pmatrix}\)</span></p></li>
+<li><p>Der Rang der Matrix ist also <span class="math inline">\(3\)</span>.</p></li>
+</ol>
+</section>
+<section id="matrixrang-und-invertierbarkeit" class="level2">
+<h2 class="anchored" data-anchor-id="matrixrang-und-invertierbarkeit">Matrixrang und Invertierbarkeit</h2>
+<p>Wenn eine quadratische Matrix vollen Rang hat (der Rang entspricht also der Zeilenanzahl und der Spaltenanzahl), dann (und nur dann) ist sie invertierbar. Die Matrix <span class="math inline">\(A = \begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 2 \end{pmatrix}\)</span> hat den Rang <span class="math inline">\(1\)</span>, also keinen vollen Rang, also ist sie nicht invertierbar. Eine quadratische Matrix ist invertierbar, falls es eine Matrix gibt, sodass das Produkt beider Matrizen die Einheitsmatrix ergibt. Die Einheitsmatrix hat Einsen auf der Diagonalen und sonst Nullen. Die Matrix <span class="math inline">\(B = \begin{pmatrix} 1 &amp; 2 \\ 0 &amp; 2 \end{pmatrix}\)</span> hat den Rang <span class="math inline">\(2\)</span>, also vollen Rang, also gibt es eine zu <span class="math inline">\(B\)</span> inverse Matrix <span class="math inline">\(B^{-1}\)</span>.</p>
+</section>
+<section id="matrixrang-und-lineare-gleichungssysteme" class="level2">
+<h2 class="anchored" data-anchor-id="matrixrang-und-lineare-gleichungssysteme">Matrixrang und lineare Gleichungssysteme</h2>
+<p>Verstehen wir eine Matrix als Koeffizientenmatrix eines linearen Gleichungssystems, so sagt der Rang aus, ob es eine (eindeutig) Lösung gibt. Wir können die Koeffizienten eines linearen Gleichungssystems als Matrix angeben: <span class="math display">\[\begin{align*}
+    \begin{array}{c}
+        x_1 + 2x_2 + 3x_3 = 6 \\
+        x_2 - 2x_3 = -1 \\
+        x_1 = 1 \\
+        2x_1 + 14x_3 = 16
+    \end{array}
+    ~ \Longleftrightarrow ~ \underbrace{\begin{pmatrix} 1 &amp; 2 &amp; 3\\
+            0 &amp; 1 &amp; -2\\
+            1 &amp; 0 &amp; 0\\
+            2 &amp; 0 &amp; 14 \end{pmatrix}}_{A~\text{(hat Rang 3)}} \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} = \underbrace{\begin{pmatrix} 6 \\ -1 \\ 1 \\ 16 \end{pmatrix}}_{b}
+\end{align*}\]</span></p>
+<p>Dann gilt:</p>
+<ul>
+<li><p>Falls der Rang der Spaltenanzahl entspricht (das ist hier der Fall), so hat das Gleichungssystem höchstens eine Lösung (für jedes beliebige <span class="math inline">\(b \in \mathbb{R}^4\)</span>).</p></li>
+<li><p>Falls der Rang der Zeilenanzahl entspricht, so hat das Gleichungssystem mindestens eine Lösung (für jedes beliebige <span class="math inline">\(b \in \mathbb{R}^4\)</span>).</p></li>
+<li><p>Das Gleichungssystem ist genau dann lösbar, wenn der Rang von <span class="math inline">\(A\)</span> gleich dem Rang von <span class="math inline">\((A \mid b)\)</span> ist. Die Matrix <span class="math inline">\((A \mid b)\)</span> heißt erweiterte Matrix, wir ergänzen einfach den Spaltenvektor <span class="math inline">\(b\)</span> als Matrixspalte. Das passt hier, denn <span class="math inline">\(b\)</span> ist die Summe der Spalten von <span class="math inline">\(A\)</span>.</p></li>
+</ul>
+</section>
+<section id="matrixrang-und-bilddimension" class="level2">
+<h2 class="anchored" data-anchor-id="matrixrang-und-bilddimension">Matrixrang und Bilddimension</h2>
+<p>Verstehen wir eine Matrix als Darstellungsmatrix einer linearen Abbildung, so entspricht der Matrixrang der Dimension des Bildes der Abbildung. Wir können eine lineare Abbildung als Matrix beschreiben: <span class="math display">\[\begin{align*}
+    F:\mathbb{R}^2 \to \mathbb{R}^2, \quad F \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} x_1 + 2x_2 \\ x_1 + 2x_2 \end{pmatrix}
+     ~ \Longleftrightarrow ~  F \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \underbrace{\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 2 \end{pmatrix}}_{A~\text{(hat Rang 1)}} \cdot \begin{pmatrix} x_1 \\ x_2 \end{pmatrix}
+\end{align*}\]</span></p>
+<p>Die Abbildung <span class="math inline">\(F\)</span> produziert nur Vektoren, die auf einer Geraden liegen. Das Bild der Abbildung hat also Dimension <span class="math inline">\(1\)</span>. Übrigens ist die Dimension des Kerns dann auch <span class="math inline">\(1\)</span> aufgrund der Dimensionsformel. Manche Punkte im <span class="math inline">\(\mathbb{R}^2\)</span> können durch <span class="math inline">\(F\)</span> nicht erreicht werden. Allgemein gilt, dass der Rang der Darstellungsmatrix der Bilddimension entspricht.</p>
+<p><span class="math display">\[\begin{align*}
+    F \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \underbrace{\begin{pmatrix} 1 &amp; 2 \\ 0 &amp; 2 \end{pmatrix}}_{B~\text{(hat Rang 2)}} \cdot \begin{pmatrix} x_1 \\ x_2 \end{pmatrix}
+\end{align*}\]</span> Die Bilddimension ist <span class="math inline">\(2\)</span> (Ebene).</p>
+<p><span class="math display">\[\begin{align*}
+    F \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} = \underbrace{\begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}}_{C~\text{(hat Rang 0)}} \cdot \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}
+\end{align*}\]</span> Die Bilddimension ist <span class="math inline">\(0\)</span> (Punkt).</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -376,7 +436,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <a class="nav-link" href="https://loelschlaeger.de">© 2023 Lennart Oelschläger</a>
   </li>  
 </ul>
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/loelschlaeger/mathe-mit-lennart/edit/main/content/rechenregeln/kommutativgesetz.qmd" class="toc-action">Seite editieren</a></p><p><a href="https://github.com/loelschlaeger/mathe-mit-lennart/issues/new" class="toc-action">Problem melden</a></p></div></div></div>
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/loelschlaeger/mathe-mit-lennart/edit/main/content/lineare-algebra/matrixrang.qmd" class="toc-action">Seite editieren</a></p><p><a href="https://github.com/loelschlaeger/mathe-mit-lennart/issues/new" class="toc-action">Problem melden</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

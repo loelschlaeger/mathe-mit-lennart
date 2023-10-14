@@ -1,0 +1,124 @@
+---
+title: "Matrixrang"
+---
+
+\renewcommand{\matrix}[1]{\begin{pmatrix} #1 \end{pmatrix}}	
+
+<div class="yt-container">
+  <iframe class="responsive-iframe" src="https://www.youtube.com/watch?v=s3DsaxGUfyI" frameborder="0"></iframe>
+</div>
+
+## Was ist der Rang einer Matrix?
+
+Der Rang einer Matrix ist eine positive ganze Zahl und kann auch $0$ sein. Zum Beispiel ist der Rang der Matrix $A = \matrix{1 & 2 \\ 1 & 2}$ gleich $1$. Und der Rang der Matrix $B = \matrix{1 & 2 \\ 0 & 2}$ ist gleich $2$. Und der Rang der Matrix $C = \matrix{0 & 0 & 0 \\ 0 & 0 & 0}$ ist $0$. Eine Matrix mit nur Nullen (eine Nullmatrix) hat immer den Rang $0$, ganz gleich ihrer Dimension. Und zusätzlich ist die Nullmatrix die einzige Matrix mit Rang $0$. Sobald eine Zahl ungleich Null in der Matrix auftaucht, hat sie mindestens den Rang $1$. Hochgestochen können wir sagen, dass der Rang eine Funktion ist, die eine Matrix auf eine Zahl abbildet. Die gesamte Matrix wird auf eine einzige Zahl reduziert. Aber was für eine Information steckt in dieser Zahl?
+
+## Was will uns der Rang mitteilen? 
+
+Der Rang einer Matrix beschreibt den Informationsgehalt: je höher der Rang, desto mehr Informationen, und umgekehrt. Der Rang von $A = \matrix{1 & 2 \\ 1 & 2}$ ist $1$, das bedeutet? 
+
+- $A$ hat zwar zwei Spalten, aber da $2 \cdot \matrix{1 \\ 1} = \matrix{2 \\ 2}$ gilt, gibt uns die zweite Spalte keine zusätzliche Information. Man sagt dazu, dass die Spaltenvektoren linear abhängig sind. Spalte zwei wird perfekt durch die erste beschrieben (und umgekehrt), wozu brauchen wir dann beide?
+
+- Auch hat $A$ zwar zwei Zeilen, aber die sind identisch, also gibt uns nur eine Zeile Informationen.
+
+Anders sieht es bei $B = \matrix{1 & 2 \\ 0 & 2}$ aus: hier bieten beide Spalten (beziehungsweise Zeilen) unabhängig Informationen an. Der Rang von $B$ ist $2$.
+
+## Wie wird nun der Matrixrang definiert?  
+
+Der Rang einer Matrix ...
+
+- ist die maximale Anzahl linear unabhängiger Spalten.
+
+- Das ist das Gleiche wie die maximale Anzahl linear unabhängiger Zeilen.
+
+- Zum Beispiel bei $\matrix{1 & 4 & 5\\ 2 & 3 & 5 \\ 3 & 2 & 5\\ 4 & 1 & 5}$ sind das jeweils $2$. Addieren wir die erste und die zweite Spalte, so erhalten wir die dritte Spalte. Zum Glück ist es egal, ob wir die Spalten oder die Zeilen auf Unabhängigkeit prüfen, denn hier ist es nicht offensichtlich, dass wir nur zwei linear unabhängige Zeilen finden können. Da aber Zeilenrang und Spaltenrang identisch sind, kann es auch nur zwei linear unabhängige Zeilen geben.
+
+- Der Rang einer $n \times m$ Matrix ist also höchstens das Minimum aus $n$ und $m$. Wenn das der Fall ist, sagt man, dass die Matrix vollen Rang hat.
+
+- Spezialfall: Der Rang einer Matrix mit einer Zeile oder einer Spalte ist immer $1$, sofern mindestens ein Eintrag ungleich $0$ ist, sonst ist der Rang $0$.
+
+## Wie bestimmt man den Matrixrang?  
+
+Der Rang einer Matrix können wir immer in zwei Schritten bestimmen:
+
+1. Bringe die Matrix mit dem Gauß-Algorithmus in Dreiecksform. Dreiecksform meint, dass alle Matrixeinträge unterhalb der Diagonale null sind.
+
+2. Der Rang ist dann die Anzahl der Zeilen, die nicht gleich dem Nullvektor sind.
+\end{enumerate}
+
+Was ist also zum Beispiel der Rang von $\matrix{1 & 2 & 3 \\
+        0 & 1 & -2 \\
+        1 & 0 & 0 \\
+        2 & 0 & 14}$?
+
+1. $\matrix{1 & 2 & 3 \\
+        0 & 1 & -2 \\
+        1 & 0 & 0 \\
+        2 & 0 & 14}
+    \overset{
+    \begin{subarray}{l}
+    \text{Z3 - Z1} \\ \text{Z4 - 2 $\cdot$ Z1}  \\ ~
+    \end{subarray}
+    }{\sim}
+    \matrix{1 & 2 & 3\\
+        0 & 1 & -2\\
+        0 & -2 & -3\\
+        0 & -4 & 8}
+    \overset{
+    \begin{subarray}{l}
+    \text{Z3 + 2 $\cdot$ Z2} \\ \text{Z4 + 4 $\cdot$ Z2}  \\ ~
+    \end{subarray}
+    }{\sim}
+    \matrix{1 & 2 & 3\\
+        0 & 1 & -2\\
+        0 & 0 & -7\\
+        0 & 0 & 0}$
+
+2. Der Rang der Matrix ist also $3$.
+
+## Matrixrang und Invertierbarkeit
+
+Wenn eine quadratische Matrix vollen Rang hat (der Rang entspricht also der Zeilenanzahl und der Spaltenanzahl), dann (und nur dann) ist sie invertierbar. Die Matrix $A = \matrix{1 & 2 \\ 1 & 2}$ hat den Rang $1$, also keinen vollen Rang, also ist sie nicht invertierbar. Eine quadratische Matrix ist invertierbar, falls es eine Matrix gibt, sodass das Produkt beider Matrizen die Einheitsmatrix ergibt. Die Einheitsmatrix hat Einsen auf der Diagonalen und sonst Nullen. Die Matrix $B = \matrix{1 & 2 \\ 0 & 2}$ hat den Rang $2$, also vollen Rang, also gibt es eine zu $B$ inverse Matrix $B^{-1}$.
+
+## Matrixrang und lineare Gleichungssysteme
+
+Verstehen wir eine Matrix als Koeffizientenmatrix eines linearen Gleichungssystems, so sagt der Rang aus, ob es eine (eindeutig) Lösung gibt. Wir können die Koeffizienten eines linearen Gleichungssystems als Matrix angeben:
+\begin{align*}
+    \begin{array}{c}
+        x_1 + 2x_2 + 3x_3 = 6 \\
+        x_2 - 2x_3 = -1 \\
+        x_1 = 1 \\
+        2x_1 + 14x_3 = 16
+    \end{array}
+    ~ \Longleftrightarrow ~ \underbrace{\matrix{1 & 2 & 3\\
+            0 & 1 & -2\\
+            1 & 0 & 0\\
+            2 & 0 & 14}}_{A~\text{(hat Rang 3)}} \matrix{x_1 \\ x_2 \\ x_3} = \underbrace{\matrix{6 \\ -1 \\ 1 \\ 16}}_{b}
+\end{align*}
+
+Dann gilt:
+
+- Falls der Rang der Spaltenanzahl entspricht (das ist hier der Fall), so hat das Gleichungssystem höchstens eine Lösung (für jedes beliebige $b \in \mathbb{R}^4$).
+
+- Falls der Rang der Zeilenanzahl entspricht, so hat das Gleichungssystem mindestens eine Lösung (für jedes beliebige $b \in \mathbb{R}^4$).
+
+- Das Gleichungssystem ist genau dann lösbar, wenn der Rang von $A$ gleich dem Rang von $(A \mid b)$ ist. Die Matrix $(A \mid b)$ heißt erweiterte Matrix, wir ergänzen einfach den Spaltenvektor $b$ als Matrixspalte. Das passt hier, denn $b$ ist die Summe der Spalten von $A$.
+
+## Matrixrang und Bilddimension
+
+Verstehen wir eine Matrix als Darstellungsmatrix einer linearen Abbildung, so entspricht der Matrixrang der Dimension des Bildes der Abbildung. Wir können eine lineare Abbildung als Matrix beschreiben: 
+\begin{align*}
+    F:\mathbb{R}^2 \to \mathbb{R}^2, \quad F \matrix{x_1 \\ x_2} = \matrix{x_1 + 2x_2 \\ x_1 + 2x_2}
+     ~ \Longleftrightarrow ~  F \matrix{x_1 \\ x_2} = \underbrace{\matrix{1 & 2 \\ 1 & 2}}_{A~\text{(hat Rang 1)}} \cdot \matrix{x_1 \\ x_2}
+\end{align*}
+
+Die Abbildung $F$ produziert nur Vektoren, die auf einer Geraden liegen. Das Bild der Abbildung hat also Dimension $1$. Übrigens ist die Dimension des Kerns dann auch $1$ aufgrund der Dimensionsformel. Manche Punkte im $\mathbb{R}^2$ können durch $F$ nicht erreicht werden. Allgemein gilt, dass der Rang der Darstellungsmatrix der Bilddimension entspricht.
+
+\begin{align*}
+    F \matrix{x_1 \\ x_2} = \underbrace{\matrix{1 & 2 \\ 0 & 2}}_{B~\text{(hat Rang 2)}} \cdot \matrix{x_1 \\ x_2}
+\end{align*}
+Die Bilddimension ist $2$ (Ebene).
+
+\begin{align*}
+    F \matrix{x_1 \\ x_2 \\ x_3} = \underbrace{\matrix{0 & 0 & 0 \\ 0 & 0 & 0}}_{C~\text{(hat Rang 0)}} \cdot \matrix{x_1 \\ x_2 \\ x_3}
+\end{align*}
+Die Bilddimension ist $0$ (Punkt).
