@@ -1,0 +1,15 @@
+---
+title: "Vektorraum"
+---
+
+Wir möchten solche Skalierungs-, Kombinations- und Umkehrungsoperationen formal definieren. Dazu brauchen wir den Begriff *Vektorraum*. Darunter versteht man eine Menge $V$, deren Elemente -- wir nennen diese Elemente *Vektoren* -- folgende Eigenschaften erfüllen:
+
+- Wir können einen Vektor $v \in V$ mit einer Zahl $\lambda \in \mathbb{R}$ multiplizieren (*Skalarmultiplikation*), das Ergebnis ist dann wieder ein Element in $V$. Dieser neue Vektor hat die selbe Richtung, aber eine andere Länge. Die Zahl $\lambda$ nennt man *Skalar*. Multiplikation mit dem Skalar Eins verändert aber nichts: $1 \cdot v = v$.
+
+- Wir können Vektoren addieren (*Vektoraddition*), die Summe $v_1 + v_2$ zweier Vektoren $v_1,v_2\in V$ ergibt einen neuen Vektor in $V$. Das beschreibt die Kombination von zwei Vektoren. Es gibt ein *neutrales Element* (wir nennen es den *Nullvektor* und notieren ihn als $0$), den wir immer addieren können, ohne etwas zu verändern: $v + 0 = v$ für alle $v \in V$. Die Reihenfolge, in der wir addieren, ist egal, das heißt $(v_1 + v_2) + v_3 = v_1 + (v_2 + v_3)$ ([Assoziativgesetz](grundlagen.html#assoziativgesetz)). Auch soll $v_1 + v_2$ das gleiche wie $v_2 + v_1$ sein ([Kommutativgesetz](grundlagen.html#kommutativgesetz)).
+
+- Zu jedem Vektor $v \in V$ gibt es einen *Umkehrvektor* $-v \in V$, der die gleiche Länge und die spiegelverkehrte Richtung hat. Bewegen wir uns also zunächst mit dem Vektor $v$ und anschließend mit dem Umkehrvektor $-v$, so landen wir wieder dort, wo wir gestartet sind: $v + (-v) = 0$.
+
+- Außerdem gilt das [Distributivgesetz](grundlagen.html#distributivgesetz), d.h. $(\lambda_1 + \lambda_2) v_1 = \lambda_1 v_1 + \lambda_2 v_2$ und $\lambda_1 (v_1 + v_2) = \lambda_1 v_1 + \lambda v_2$ für beliebige Vektoren $v_1, v_2 \in V$ und beliebige Zahlen $\lambda_1,\lambda_2 \in \mathbb{R}$.
+
+Welche Mengen erfüllen diese Eigenschaften? $V = \mathbb{R}^n$, der *reelle Vektorraum*, ist das wichtigste Beispiel und der einzige Vektorraum, den wir benutzen werden. Im obigen Beispiel ist $V = \mathbb{R}^2$.

@@ -1,0 +1,90 @@
+---
+title: "Vektoren"
+---
+
+*Vektoren* sind abstrakte, mathematische Objekte. Wir werden sie einsetzen, um wirtschaftliche Probleme zu lösen, die von mehr als nur einer Einflussgröße abhängen.
+
+## Intuition
+
+Vektoren definieren Wege durch eine *Länge* und eine *Richtung*. Am einfachsten kann man sich Vektoren so vorstellen: Wir stehen in einem zweidimensionalen Koordiatensystem am Ursprung -- also bei dem Punkt $(0,0)$ -- und möchten zu dem Punkt $(1,2)$ gelangen. Dafür müssen wir eine gewisse Distanz in eine gewisse Richtung laufen, das ist nachfolgend durch einen <span style="color:#3232a8">blauen Pfeil</span> dargestellt, das ist ein Vektor. Wir notieren diesen Vektor als <span style="color:#3232a8">$\begin{pmatrix} 1 \\ 2 \end{pmatrix}$</span>, das bedeutet *gehe einen Schritt in die $x$- und zwei Schritte in die $y$-Richtung*. 
+
+Wenn wir nach der Hälfte der Strecke stehen bleiben, gelangen wir zu $(0.5,1)$, <span style="color:#a83232">roter Pfeil</span>. Vektoren sind also *skalierbar* in dem Sinn, dass die Hälfte von <span style="color:#3232a8">$\begin{pmatrix} 1 \\ 2 \end{pmatrix}$</span> gleich dem Vektor <span style="color:#a83232">$\begin{pmatrix} 0.5 \\ 1 \end{pmatrix}$</span> ist. 
+
+Wenn wir die gleiche Distanz in eine andere Richtung laufen, landen wir natürlich an einem anderen Punkt, <span style="color:#32a852">grüner Pfeil</span>. Diese Laufrichtung kann auch umgekehrt werden, <span style="color:#d17711">orangener Pfeil</span>: kehren wir <span style="color:#32a852">$\begin{pmatrix} 2 \\ 1 \end{pmatrix}$</span> um, so erhalten wir den Vektor <span style="color:#d17711">$\begin{pmatrix} -2 \\ -1 \end{pmatrix}$</span>. 
+
+Darüber hinaus können Vektoren kombiniert werden: Der <span style="color:#3232a8">blaue Pfeil</span> und der <span style="color:#7d32a8">lilane Pfeil</span> ergeben zusammen das gleiche Ziel wie der <span style="color:#32a852">grüne Pfeil</span>: <span style="color:#3232a8">$\begin{pmatrix} 1 \\ 2 \end{pmatrix}$</span> und <span style="color:#7d32a8">$\begin{pmatrix} 1 \\ -1 \end{pmatrix}$</span> ergibt <span style="color:#32a852">$\begin{pmatrix} 2 \\ 1 \end{pmatrix}$</span>. Alle diese Überlegungen lassen sich auf beliebig viele Dimensionen verallgemeinern.
+
+```{r, vector-plot, echo = FALSE}
+library("ggplot2")
+arrow <- arrow(length = unit(0.5, "cm"))
+linewidth <- 2
+ggplot() + 
+  theme_minimal() +
+  geom_segment(
+    aes(x = 1, y = 2, xend = 2, yend = 1),
+    color = "#7d32a8",
+    arrow = arrow, linewidth = linewidth
+  ) + 
+  geom_segment(
+    aes(x = 0, y = 0, xend = 1, yend = 2),
+    color = "#3232a8",
+    arrow = arrow, linewidth = linewidth
+  ) +
+  geom_segment(
+    aes(x = 0.03, y = 0, xend = 0.53, yend = 1),
+    color = "#a83232",
+    arrow = arrow, linewidth = linewidth
+  ) +
+  geom_segment(
+    aes(x = 0, y = 0, xend = 2, yend = 1),
+    color = "#32a852",
+    arrow = arrow, linewidth = linewidth
+  ) +
+  geom_segment(
+    aes(x = 0, y = 0, xend = -2, yend = -1),
+    color = "#d17711",
+    arrow = arrow, linewidth = linewidth
+  ) +
+  geom_point(
+    aes(x = 0, y = 0), size = 5
+  ) +
+   geom_point(
+    aes(x = 0.5, y = 1), size = 5
+  ) +
+  geom_point(
+    aes(x = 1, y = 2), size = 5
+  ) +
+  scale_x_continuous(
+    limits = c(-2, 2),
+    breaks = -2:2
+  ) +
+  scale_y_continuous(
+    limits = c(-1, 2),
+    breaks = -1:2
+  ) +
+  coord_fixed() +
+  labs(
+    x = element_blank(),
+    y = element_blank()
+  )
+```
+
+## Rechnen mit Vektoren
+
+Ein Element aus $V = \mathbb{R}^n$ notieren wir als $x = \begin{pmatrix} x_1 \\ \vdots \\ x_n\end{pmatrix}$, wobei die einzelnen *Komponenten* $x_1,\dots,x_n$ reelle Zahlen sind. 
+
+Die *Vektoraddition* ist definiert als $$x + y = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix} + \begin{pmatrix} y_1 \\ \vdots \\ y_n \end{pmatrix} = \begin{pmatrix} x_1 + y_1 \\ \vdots \\ x_n + y_n \end{pmatrix},$$ wir addieren also *komponentenweise*. 
+
+Die *Skalarmultiplikation* mit $\lambda \in \mathbb{R}$ ist definiert als $$\lambda \cdot x = \lambda \cdot \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix} = \begin{pmatrix} \lambda x_1 \\ \vdots \\ \lambda x_n \end{pmatrix},$$ wir multiplizieren also *komponentenweise*.
+
+Der *Nullvektor* ist dann $$0 = \begin{pmatrix} 0 \\ \vdots \\ 0 \end{pmatrix}.$$ und der Umkehrvektor $$-x = \begin{pmatrix} -x_1 \\ \vdots \\ -x_n\end{pmatrix}.$$
+
+Wir können also recht natürlich mit Vektoren rechnen, zum Beispiel in dem Fall $V = \mathbb{R}^3$:
+$$\frac{1}{2} \left( \begin{pmatrix} 1\\ 15\\ 10 \end{pmatrix} + 2 \begin{pmatrix} 2\\ -4\\ -2 \end{pmatrix} -3 \begin{pmatrix} 1\\ 1\\ 0 \end{pmatrix} \right).$$
+
+::: {.callout-caution collapse="true"}
+## Was ist das Ergebnis??
+
+$$\begin{pmatrix} 1\\ 2\\ 3 \end{pmatrix}$$
+:::
+

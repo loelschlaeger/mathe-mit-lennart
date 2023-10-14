@@ -1,0 +1,11 @@
+---
+title: "Prozentrechnung"
+---
+
+Prozente sind spezielle [Brüche](bruchrechnung.qmd), die immer den Nenner $100$ haben.^[Promille haben als Referenzwert die $1000$, nicht die $100$. Also sind $10‰ = 1\%$.] Zum Beispiel ist $1\% = \frac{1}{100}$ und $200\% = \frac{200}{100}=2$. 
+
+::: {.callout-caution collapse="true"}
+## Wenn $42$ genau $7\%$ sind, welcher Wert entspricht dann $100\%$?
+
+Wenn $42$ genau $7\%$ sind, dann sind $42:7=6$ genau $1\%$ und somit entspricht $6\cdot 100 = 600$ den $100\%$ - ein typischer *Dreisatz*.
+:::

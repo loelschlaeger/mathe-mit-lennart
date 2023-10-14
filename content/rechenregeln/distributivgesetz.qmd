@@ -1,0 +1,5 @@
+---
+title: "Distributivgesetz"
+---
+
+Die Umformung $3x^2 - 6xy = 3x(x - 2y)$ nennt man *Ausklammern* (von $3x$), die Umformung $3(a+2b) = 3a + 6b$ *Ausmultiplizieren*. Die Rechtfertigung dafür liefert das Distributivgesetz: $a \cdot (b \pm c) = a \cdot b \pm a \cdot c$.^[Das Zeichen $\pm$ ist eine Kurzschreibweise und meint, dass beide Male Plus oder beide Male Minus eingesetzt wird.]

@@ -1,0 +1,20 @@
+---
+title: "Ungleichungen"
+---
+
+Wir können auch ausdrücken, dass zwei Dinge ungleich sind:
+
+- $a \neq b$ heißt *$a$ ist nicht gleich $b$*
+- $a < b$ heißt *$a$ ist kleiner als $b$*
+- $a \leq b$ heißt *$a$ ist höchstens so groß wie $b$*
+- $a \geq b$ heißt *$a$ ist mindestens so groß wie $b$*
+- $a > b$ heißt *$a$ ist größer als $b$*
+
+Wichtig bei der Umformung von Ungleichungen: Bei Multipikation oder Division mit einer negativen Zahl dreht sich das Ungleichheitszeichen um.
+
+::: {.callout-caution collapse="true"}
+## Wie lautet die Lösung von $-2x \geq 8$?
+
+$$-2x \geq 8 \Leftrightarrow x \leq -\frac{8}{2} \Leftrightarrow x \leq -4$$
+:::
+

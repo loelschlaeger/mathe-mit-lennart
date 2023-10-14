@@ -1,0 +1,22 @@
+---
+title: "Bruchrechnung"
+---
+
+Brüche benötigen wir, wenn etwas Ganzes unterteilt wird: Eine Pizza wird in vier Stücke geschnitten, ich nehme mir eines weg, dann bleibt noch $\frac34$ der Pizza übrig. Die Zahl über dem Bruchstrich (hier die 3) nennt man *Zähler*, die untere Zahl (4) *Nenner*. Ein Bruchstrich ist das gleiche wie ein Divisionszeichen: $\frac34 = 3 : 4 = 0.75$.
+
+Der Nenner eines Bruches darf nie Null sein. Das ist gleichbedeutend damit, dass man nicht durch Null teilen darf. Der Zähler eines Bruches kann Null sein. In diesem Fall ist der Bruch gleich Null.
+
+Wenn man Zähler und Nenner mit der gleichen Zahl multipliziert nennt man das *Erweitern* ($\frac34 = \frac{2\cdot 3}{2\cdot 4} = \frac68$), wenn man Zähler und Nenner durch die gleiche Zahl dividiert nennt man das *Kürzen* ($\frac24 = \frac{2:2}{4:2}=\frac{1}{2}$).
+
+Zwei Brüche können addiert (oder subtrahiert) werden, wenn sie den gleichen Nenner haben. Der Zähler wird dann addiert (oder subtrahiert), der Nenner bleibt der gleiche: $\frac14+\frac24=\frac{1+2}{4}=\frac34$ oder $\frac14-\frac24=\frac{1-2}{4}=-\frac{1}{4}$.^[Ein Minuszeichen im Zähler (oder Nenner) kann einfach vor den Bruch geschrieben werden: $\frac{-1}{4} = \frac{1}{4} = \frac{1}{-4}$.] Wenn die Brüche keinen gemeinsamen Nenner haben, müssen sie vorher erweitert werden: $\frac12+\frac13 = \frac36 +\frac26 = \frac56$.
+
+Multiplikation von Brüchen ist einfacher, hier werden Zähler und Nenner jeweils multipliziert. Zwei Brüche werden dividiert indem ein Bruch mit dem Kehrwert^[Den Kehrwert eines Bruchs bildest du, indem du Zähler und Nenner vertauscht. Der Kehrwert von $\frac37$ ist also $\frac73$.] des anderen Bruches multipliziert wird.
+
+::: {.callout-caution collapse="true"}
+## Was ist das Ergebnis von $\displaystyle \frac15 + \frac{3:4}{5:2}$?
+
+\begin{align*}
+& \frac15 + \frac{3:4}{5:2} = \frac15 +\frac{\frac34}{\frac52} = \frac15+\frac34\cdot\frac25 \\ =&~ \frac15+\frac{6}{20} = \frac{2}{10} + \frac{3}{10} = \frac{5}{10} = \frac12
+\end{align*}
+:::
+

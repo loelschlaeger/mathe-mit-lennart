@@ -1,0 +1,36 @@
+---
+title: "Potenzrechnung"
+---
+
+Während das Multiplizieren eine abkürzende Schreibweise für das wiederholte Summieren ist ($4 \cdot 3 = 3+3+3+3$), ist das Potenzieren eine abkürzende Schreibweise für das wiederholte Multiplizieren: $a^r := \underbrace{a\cdot a \cdot a \cdot \dots \cdot a}_{r~\text{mal}}$.^[Das Symbol $:=$ bedeutet *die linke Seite ist definiert durch die rechte Seite*.] Man nennt $a$ *Basis* und $r$ *Exponent*. 
+
+::: {.callout-caution collapse="true"}
+## Per Konvention ist $a^0 = 1$. Warum ist das sinnvoll?
+
+Es gilt $a^r = \underbrace{a\cdot a \cdot a \cdot \dots \cdot a}_{r~\text{mal}} \cdot 1$, da Multiplizieren mit der Zahl 1 nichts verändert. Im Fall $r = 0$ steht die 1 ganz alleine da, also $a^0 = 1$.
+:::
+
+Der Exponent kann negativ sein. Man definiert $\displaystyle a^{-r} := \frac{1}{a^r}.$ Außerdem gelten diese Rechengesetze:
+
+\begin{align}
+a^{r+s} &= a^r \cdot a^s (\#eq:pot1) \\
+a^{r-s} &= \frac{a^r}{a^s} (\#eq:pot2) \\
+(a\cdot b)^r &= a^r \cdot b^r (\#eq:pot3) \\
+\left(\frac{a}{b}\right)^r &= \frac{a^r}{b^r} (\#eq:pot4) \\
+(a^r)^s &= a^{r\cdot s} (\#eq:pot5)
+\end{align}
+
+::: {.callout-caution collapse="true"}
+## Für welche Exponenten gilt $(-a)^r = a^r$?
+
+Das gilt für alle geraden Zahlen $r$. Um das zu zeigen benötigen wir \@ref(eq:pot3), \@ref(eq:pot5) und die Erkenntnis, dass sich jede gerade Zahl $r$ als $2\cdot s$ für eine beliebige Zahl $s$ ausdrücken lässt:^[Wir werden diese Aussage [im nächsten Kapitel](aussagenlogik.html#beweise) formal beweisen.]
+\begin{align*}
+(-a)^r &= (-1 \cdot a)^{r} \\
+       &= (-1)^r \cdot a^r \\
+       &= (-1)^{2 \cdot s} \cdot a^r \\
+       &= ((-1)^2)^s \cdot a^r \\
+       &= 1^s \cdot a^r \\
+       &= 1 \cdot a^r \\
+       &= a^r
+\end{align*}
+:::

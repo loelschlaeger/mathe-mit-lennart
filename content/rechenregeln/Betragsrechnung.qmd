@@ -1,0 +1,16 @@
+---
+title: "Betragsrechnung"
+---
+
+Den *Absolutbetrag* (oder auch einfach *Betrag*) einer Zahl erhält man durch Weglassen des Vorzeichens, also ist $|7| = 7$ und $|-7| = 7$. Gleichungen mit Beträgen löst man am besten durch eine Fallunterscheidung: Der Ausdruck innerhalb des Betrages kann positiv oder negativ sein.
+
+::: {.callout-caution collapse="true"}
+## Wie lautet die Lösung von $|2x-9| = 3$?
+
+Fall 1: $2x-9 = 3 \Leftrightarrow 2x = 12 \Leftrightarrow x = 6$
+
+Fall 2: $-(2x-9) = 3 \Leftrightarrow -2x + 9 = 3 \Leftrightarrow -2x = -6 \Leftrightarrow x = 3$
+
+Also lösen $x=6$ und $x=3$ die Betragsgleichung.
+:::
+

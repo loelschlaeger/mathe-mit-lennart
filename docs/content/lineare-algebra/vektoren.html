@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mathe mit Lennart - Seite nicht gefunden</title>
+<title>Mathe mit Lennart - Vektoren</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +23,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="/mathe-mit-lennart/site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="/mathe-mit-lennart/site_libs/clipboard/clipboard.min.js"></script>
-<script src="/mathe-mit-lennart/site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="/mathe-mit-lennart/site_libs/quarto-search/fuse.min.js"></script>
-<script src="/mathe-mit-lennart/site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="/mathe-mit-lennart/">
-<script src="/mathe-mit-lennart/site_libs/quarto-html/quarto.js"></script>
-<script src="/mathe-mit-lennart/site_libs/quarto-html/popper.min.js"></script>
-<script src="/mathe-mit-lennart/site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="/mathe-mit-lennart/site_libs/quarto-html/anchor.min.js"></script>
-<link href="/mathe-mit-lennart/site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="/mathe-mit-lennart/site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="/mathe-mit-lennart/site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="/mathe-mit-lennart/site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="/mathe-mit-lennart/site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -58,8 +58,10 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="/mathe-mit-lennart/styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -69,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="/mathe-mit-lennart/index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Mathe mit Lennart</span>
     </a>
   </div>
@@ -89,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Seite nicht gefunden</h1>
+<h1 class="title">Vektoren</h1>
 </div>
 
 
@@ -104,9 +106,45 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Tut mir leid, diese Seite gibt es nicht.</p>
+<p><em>Vektoren</em> sind abstrakte, mathematische Objekte. Wir werden sie einsetzen, um wirtschaftliche Probleme zu lösen, die von mehr als nur einer Einflussgröße abhängen.</p>
+<section id="intuition" class="level2">
+<h2 class="anchored" data-anchor-id="intuition">Intuition</h2>
+<p>Vektoren definieren Wege durch eine <em>Länge</em> und eine <em>Richtung</em>. Am einfachsten kann man sich Vektoren so vorstellen: Wir stehen in einem zweidimensionalen Koordiatensystem am Ursprung – also bei dem Punkt <span class="math inline">\((0,0)\)</span> – und möchten zu dem Punkt <span class="math inline">\((1,2)\)</span> gelangen. Dafür müssen wir eine gewisse Distanz in eine gewisse Richtung laufen, das ist nachfolgend durch einen <span style="color:#3232a8">blauen Pfeil</span> dargestellt, das ist ein Vektor. Wir notieren diesen Vektor als <span style="color:#3232a8"><span class="math inline">\(\begin{pmatrix} 1 \\ 2 \end{pmatrix}\)</span></span>, das bedeutet <em>gehe einen Schritt in die <span class="math inline">\(x\)</span>- und zwei Schritte in die <span class="math inline">\(y\)</span>-Richtung</em>.</p>
+<p>Wenn wir nach der Hälfte der Strecke stehen bleiben, gelangen wir zu <span class="math inline">\((0.5,1)\)</span>, <span style="color:#a83232">roter Pfeil</span>. Vektoren sind also <em>skalierbar</em> in dem Sinn, dass die Hälfte von <span style="color:#3232a8"><span class="math inline">\(\begin{pmatrix} 1 \\ 2 \end{pmatrix}\)</span></span> gleich dem Vektor <span style="color:#a83232"><span class="math inline">\(\begin{pmatrix} 0.5 \\ 1 \end{pmatrix}\)</span></span> ist.</p>
+<p>Wenn wir die gleiche Distanz in eine andere Richtung laufen, landen wir natürlich an einem anderen Punkt, <span style="color:#32a852">grüner Pfeil</span>. Diese Laufrichtung kann auch umgekehrt werden, <span style="color:#d17711">orangener Pfeil</span>: kehren wir <span style="color:#32a852"><span class="math inline">\(\begin{pmatrix} 2 \\ 1 \end{pmatrix}\)</span></span> um, so erhalten wir den Vektor <span style="color:#d17711"><span class="math inline">\(\begin{pmatrix} -2 \\ -1 \end{pmatrix}\)</span></span>.</p>
+<p>Darüber hinaus können Vektoren kombiniert werden: Der <span style="color:#3232a8">blaue Pfeil</span> und der <span style="color:#7d32a8">lilane Pfeil</span> ergeben zusammen das gleiche Ziel wie der <span style="color:#32a852">grüne Pfeil</span>: <span style="color:#3232a8"><span class="math inline">\(\begin{pmatrix} 1 \\ 2 \end{pmatrix}\)</span></span> und <span style="color:#7d32a8"><span class="math inline">\(\begin{pmatrix} 1 \\ -1 \end{pmatrix}\)</span></span> ergibt <span style="color:#32a852"><span class="math inline">\(\begin{pmatrix} 2 \\ 1 \end{pmatrix}\)</span></span>. Alle diese Überlegungen lassen sich auf beliebig viele Dimensionen verallgemeinern.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="vektoren_files/figure-html/vector-plot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="rechnen-mit-vektoren" class="level2">
+<h2 class="anchored" data-anchor-id="rechnen-mit-vektoren">Rechnen mit Vektoren</h2>
+<p>Ein Element aus <span class="math inline">\(V = \mathbb{R}^n\)</span> notieren wir als <span class="math inline">\(x = \begin{pmatrix} x_1 \\ \vdots \\ x_n\end{pmatrix}\)</span>, wobei die einzelnen <em>Komponenten</em> <span class="math inline">\(x_1,\dots,x_n\)</span> reelle Zahlen sind.</p>
+<p>Die <em>Vektoraddition</em> ist definiert als <span class="math display">\[x + y = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix} + \begin{pmatrix} y_1 \\ \vdots \\ y_n \end{pmatrix} = \begin{pmatrix} x_1 + y_1 \\ \vdots \\ x_n + y_n \end{pmatrix},\]</span> wir addieren also <em>komponentenweise</em>.</p>
+<p>Die <em>Skalarmultiplikation</em> mit <span class="math inline">\(\lambda \in \mathbb{R}\)</span> ist definiert als <span class="math display">\[\lambda \cdot x = \lambda \cdot \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix} = \begin{pmatrix} \lambda x_1 \\ \vdots \\ \lambda x_n \end{pmatrix},\]</span> wir multiplizieren also <em>komponentenweise</em>.</p>
+<p>Der <em>Nullvektor</em> ist dann <span class="math display">\[0 = \begin{pmatrix} 0 \\ \vdots \\ 0 \end{pmatrix}.\]</span> und der Umkehrvektor <span class="math display">\[-x = \begin{pmatrix} -x_1 \\ \vdots \\ -x_n\end{pmatrix}.\]</span></p>
+<p>Wir können also recht natürlich mit Vektoren rechnen, zum Beispiel in dem Fall <span class="math inline">\(V = \mathbb{R}^3\)</span>: <span class="math display">\[\frac{1}{2} \left( \begin{pmatrix} 1\\ 15\\ 10 \end{pmatrix} + 2 \begin{pmatrix} 2\\ -4\\ -2 \end{pmatrix} -3 \begin{pmatrix} 1\\ 1\\ 0 \end{pmatrix} \right).\]</span></p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was ist das Ergebnis??
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[\begin{pmatrix} 1\\ 2\\ 3 \end{pmatrix}\]</span></p>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -342,6 +380,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://utteranc.es/client.js" repo="loelschlaeger/mathe-mit-lennart" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -354,7 +394,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <a class="nav-link" href="https://loelschlaeger.de">© 2023 Lennart Oelschläger</a>
   </li>  
 </ul>
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/loelschlaeger/mathe-mit-lennart/edit/main/404.qmd" class="toc-action">Seite editieren</a></p><p><a href="https://github.com/loelschlaeger/mathe-mit-lennart/issues/new" class="toc-action">Problem melden</a></p></div></div></div>
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/loelschlaeger/mathe-mit-lennart/edit/main/content/lineare-algebra/vektoren.qmd" class="toc-action">Seite editieren</a></p><p><a href="https://github.com/loelschlaeger/mathe-mit-lennart/issues/new" class="toc-action">Problem melden</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

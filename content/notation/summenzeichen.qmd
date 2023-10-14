@@ -1,0 +1,11 @@
+---
+title: "Summenzeichen"
+---
+
+Den griechischen Buchstaben $\displaystyle \sum$ (Sigma) verwenden Mathematiker um Summen verkürzt aufzuschreiben. Zum Beispiel kannst du $x_1 + x_2 + x_3 + x_4$ als $\displaystyle \sum_{i=1}^4 x_i$ (sprich *die Summe von $i$ gleich 1 bis 4 über $x_i$*) schreiben. Beachte, dass der Ausdruck $x_i$ einen Index $i$ hat, für den die Zahlen $1$ bis $4$ eingesetzt werden.
+
+::: {.callout-caution collapse="true"}
+## Wie lautet das Ergebnis von $\displaystyle \sum_{i=-2}^2 i$?
+
+$$\sum_{i=-2}^2 i = (-2) + (-1) + 0 + 1 + 2 = 0$$
+:::

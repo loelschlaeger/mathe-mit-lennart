@@ -1,0 +1,25 @@
+---
+title: "Binomische Formeln"
+---
+
+Achtung: $(a+b)^2 \neq a^2 + b^2$.^[... wenn nicht gerade $a=0$ oder $b=0$.] Es gilt nämlich
+
+\begin{equation}
+(a+b)^2 = a^2+2ab+b^2, (\#eq:binom1)
+\end{equation}
+
+\begin{equation}
+(a-b)^2 = a^2-2ab+b^2,(\#eq:binom2)
+\end{equation}
+
+\begin{equation}
+(a+b)(a-b) = a^2-b^2. (\#eq:binom3)
+\end{equation}
+
+::: {.callout-caution collapse="true"}
+## Kannst du die erste Formel durch Ausmultiplizieren überprüfen?
+
+\begin{align*}
+(a+b)^2 &= (a+b)(a+b) = a(a+b) + b(a+b) \\ &= a^2 + ab + ba + b^2 = a^2 + 2ab + b^2
+\end{align*}
+:::

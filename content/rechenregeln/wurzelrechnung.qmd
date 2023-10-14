@@ -1,0 +1,5 @@
+---
+title: "Wurzelrechnung"
+---
+
+Wurzeln sind nichts anderes als Potenzen. Man definiert *die $n$-te Wurzel aus $a$* als $\displaystyle\sqrt[n]{a} := a^\frac{1}{n}$. Die Quadratwurzel ist der Spezialfall $n = 2$: $\displaystyle\sqrt[2]{a} := \sqrt{a} := a^\frac{1}{2}$. Wurzeln können Potenzen aufzulösen, denn $\displaystyle \sqrt[n]{a^n} = (a^n)^\frac{1}{n} = a^{n\cdot \frac{1}{n}} = a$.

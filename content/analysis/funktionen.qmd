@@ -1,0 +1,11 @@
+---
+title: "Funktionen"
+---
+
+Eine Funktion ist eine Abbildung zwischen zwei Mengen, typischerweise zwei Mengen an Zahlen, die jedem Element der einen Menge genau ein Element der anderen Menge zuordnet. Die Funktion $f(x) = x^2$ zum Beispiel erhält die Zahl $x$ und gibt das Quadrat von $x$ zurück. Die Menge möglicher Eingabewerte nennt man *Definitionsbereich*, die Menge der Ausgabewerte nennt man *Wertebereich*.
+
+::: {.callout-caution collapse="true"}
+## Welche Zahlen werden von $f(x) = x^2 - 4$ auf $0$ abgebildet?
+
+Wir lösen die [Gleichung](#gleichungen) $f(x) = 0 \Leftrightarrow x^2 - 4 = 0 \Leftrightarrow x^2 = 4$ und erhalten die zwei Lösungen (Nullstellen) $x_1 = 2$ und $x_2 = -2$.
+:::

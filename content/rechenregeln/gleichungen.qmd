@@ -1,0 +1,7 @@
+---
+title: "Gleichungen"
+---
+
+Das [Kommutativgesetz](kommutativgesetz.qmd) für die Addition ($a+b = b+a$) ist ein Beispiel für eine Gleichung: der Term links des Gleichheitszeichens $=$ ist *gleich* (genau so groß, identisch) dem Term auf der rechten Seite.
+
+Eine Gleichung bleibt erhalten, wenn auf beiden Seiten der Gleichung die gleichen Umformungen vorgenommen werden: Wenn $x + 2 = 3$ gilt, dann gilt auch $x + 2 - 2 = 3 - 2$ und auch $x = 1$. Wir haben hier *die Gleichung nach $x$ aufgelöst* indem wir auf beiden Seiten $2$ subtrahiert haben; $x = 1$ ist *die Lösung der Gleichung*. Verkürzt kann man die Umformung mit dem Äquivalenzpfeil aufgeschreiben: $x + 2 = 3 \Leftrightarrow x = 1$. 

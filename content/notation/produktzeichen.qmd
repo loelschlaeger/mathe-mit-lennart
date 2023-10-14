@@ -1,0 +1,6 @@
+---
+title: "Produktzeichen"
+---
+
+Analog zum [Summenzeichen](summenzeichen.qmd) können Produkt mit dem Produktzeichen $\displaystyle \prod$ (der griechische Buchstabe Pi) verkürzt werden, zum Beispiel 
+$$1 \cdot 3 \cdot 5 \cdot 7 = \prod_{k=0}^3 2k+1.$$
