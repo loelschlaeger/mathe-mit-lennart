@@ -1,5 +1,6 @@
 ---
-title: "Themen"
+title: "Übersicht"
+comments: false
 listing:
   contents: content
   type: grid

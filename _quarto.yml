@@ -6,23 +6,24 @@ website:
   title: "Mathe mit Lennart"
   navbar:
     pinned: true
-    right:
-      - icon: youtube
-        href: https://www.youtube.com/@mathe-mit-lennart
-        aria-label: YouTube
   site-url: https://loelschlaeger.de/mathe-mit-lennart
   page-footer:
     center: 
       - text: "© 2023 Lennart Oelschläger"
         href: https://loelschlaeger.de
   search: 
-    type: textbox
     limit: 3
   repo-url: https://github.com/loelschlaeger/mathe-mit-lennart
   repo-actions: [edit, issue]
 
 format:
   html:
-    theme: cosmo
+    theme: simplex
+    lang: "de"
+    
+comments:
+  utterances:
+    repo: loelschlaeger/mathe-mit-lennart
+
 
 
