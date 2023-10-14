@@ -1,0 +1,7 @@
+---
+title: Seite nicht gefunden
+---
+
+Tut mir leid, diese Seite gibt es nicht.
+
+<button class="button" onclick="history.back()">Hier geht's zurück.</button>

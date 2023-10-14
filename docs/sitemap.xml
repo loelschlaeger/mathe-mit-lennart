@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/lineare-algebra/matrixrang.html</loc>
-    <lastmod>2023-10-14T10:13:43.272Z</lastmod>
+    <lastmod>2023-10-14T10:25:11.635Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/assoziativgesetz.html</loc>
-    <lastmod>2023-10-14T10:13:43.501Z</lastmod>
+    <lastmod>2023-10-14T10:25:11.847Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/kommutativgesetz.html</loc>
-    <lastmod>2023-10-14T10:13:43.702Z</lastmod>
+    <lastmod>2023-10-14T10:25:12.042Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/index.html</loc>
-    <lastmod>2023-10-14T10:13:43.936Z</lastmod>
+    <lastmod>2023-10-14T10:25:12.281Z</lastmod>
+  </url>
+  <url>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/LICENSE.html</loc>
+    <lastmod>2023-10-14T10:25:12.986Z</lastmod>
   </url>
 </urlset>
