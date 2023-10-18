@@ -1,9 +1,0 @@
----
-title: "Aussage"
----
-
-Aussagen sind zum Beispiel:
-
-- Jede Kugel ist eine geometrische Form. Einige geometrische Formen sind grün.
-
-- Alle Krimis sind spannend. Manche Thriller sind Krimis. 

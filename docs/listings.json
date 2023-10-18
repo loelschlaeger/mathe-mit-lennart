@@ -2,26 +2,32 @@
   {
     "listing": "/index.html",
     "items": [
+      "/content/logik/adjunktion.html",
       "/content/rechenregeln/assoziativgesetz.html",
-      "/content/aussagenlogik/aussage.html",
+      "/content/logik/aussagen.html",
       "/content/rechenregeln/Betragsrechnung.html",
       "/content/rechenregeln/binomische-formeln.html",
       "/content/rechenregeln/bruchrechnung.html",
       "/content/rechenregeln/distributivgesetz.html",
       "/content/analysis/funktionen.html",
       "/content/rechenregeln/gleichungen.html",
+      "/content/logik/implikation.html",
       "/content/rechenregeln/kommutativgesetz.html",
-      "/content/lineare-algebra/matrixrang.html",
+      "/content/logik/konjunktion.html",
+      "/content/matrizen/matrixrang.html",
+      "/content/logik/negation.html",
       "/content/rechenregeln/potenzrechnung.html",
       "/content/notation/produktzeichen.html",
       "/content/rechenregeln/prozentrechnung.html",
       "/content/notation/summenzeichen.html",
       "/content/rechenregeln/ungleichungen.html",
-      "/content/lineare-algebra/vektoren.html",
-      "/content/lineare-algebra/vektorraum.html",
+      "/content/vektoren/vektoren.html",
+      "/content/vektoren/vektorraum.html",
+      "/content/logik/verknuepfung.html",
       "/content/rechenregeln/vorrangsregeln.html",
       "/content/rechenregeln/wurzelrechnung.html",
-      "/content/rechenregeln/p-q-Formel.html"
+      "/content/rechenregeln/p-q-Formel.html",
+      "/content/logik/quantoren.html"
     ]
   }
 ]

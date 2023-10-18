@@ -1,0 +1,15 @@
+---
+title: "Aussagen"
+---
+
+Aussagen sind Sätze, über die man sinnvoll fragen kann, ob sie wahr oder falsch sind. Es ist nicht notwendig, die Wahrheit oder Falschheit der Aussage feststellen zu können. Es reicht aus, dass die Frage nach Wahrheit oder Falschheit *Sinn ergibt*. Dies ist beispielsweise bei Fragesätzen, Ausrufen und Wünschen nicht der Fall. 
+
+Aussagen sind also Sätze, die Sachverhalte beschreiben und denen man einen Wahrheitswert zuordnen kann. Aussagen können auch [negiert](negation.qmd), miteinander [verknüpft](verknuepfung.qmd) oder durch [Quantoren](quantoren.qmd) eingeschränkt werden.
+
+Beispiele für Aussagen sind:
+
+- Ein Schachbrett hat 64 Felder. (wahr)
+
+- Die Erde ist eine Scheibe. (falsch)
+
+- In Deutschland gibt es mehr Burger King Fillialen als McDonald's. (keine Ahnung)

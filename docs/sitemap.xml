@@ -2,90 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/analysis/funktionen.html</loc>
-    <lastmod>2023-10-14T10:57:08.243Z</lastmod>
+    <lastmod>2023-10-18T08:17:20.500Z</lastmod>
   </url>
   <url>
-    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/aussagenlogik/aussage.html</loc>
-    <lastmod>2023-10-14T10:57:08.429Z</lastmod>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/logik/adjunktion.html</loc>
+    <lastmod>2023-10-18T08:19:26.308Z</lastmod>
   </url>
   <url>
-    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/lineare-algebra/matrixrang.html</loc>
-    <lastmod>2023-10-14T10:57:08.699Z</lastmod>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/logik/aussagen.html</loc>
+    <lastmod>2023-10-18T08:17:23.640Z</lastmod>
   </url>
   <url>
-    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/lineare-algebra/vektoren.html</loc>
-    <lastmod>2023-10-14T10:57:10.079Z</lastmod>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/logik/implikation.html</loc>
+    <lastmod>2023-10-18T08:17:24.961Z</lastmod>
   </url>
   <url>
-    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/lineare-algebra/vektorraum.html</loc>
-    <lastmod>2023-10-14T10:57:10.285Z</lastmod>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/logik/konjunktion.html</loc>
+    <lastmod>2023-10-18T08:17:26.046Z</lastmod>
+  </url>
+  <url>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/logik/negation.html</loc>
+    <lastmod>2023-10-18T08:17:27.393Z</lastmod>
+  </url>
+  <url>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/logik/quantoren.html</loc>
+    <lastmod>2023-10-18T08:17:28.396Z</lastmod>
+  </url>
+  <url>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/logik/verknuepfung.html</loc>
+    <lastmod>2023-10-18T08:17:29.552Z</lastmod>
+  </url>
+  <url>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/matrizen/matrixrang.html</loc>
+    <lastmod>2023-10-18T08:17:30.962Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/notation/produktzeichen.html</loc>
-    <lastmod>2023-10-14T10:57:10.477Z</lastmod>
+    <lastmod>2023-10-18T08:17:32.059Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/notation/summenzeichen.html</loc>
-    <lastmod>2023-10-14T10:57:10.684Z</lastmod>
+    <lastmod>2023-10-18T08:17:33.100Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/assoziativgesetz.html</loc>
-    <lastmod>2023-10-14T10:57:10.880Z</lastmod>
+    <lastmod>2023-10-18T08:17:34.343Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/Betragsrechnung.html</loc>
-    <lastmod>2023-10-14T10:57:11.061Z</lastmod>
+    <lastmod>2023-10-18T08:17:35.661Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/binomische-formeln.html</loc>
-    <lastmod>2023-10-14T10:57:11.277Z</lastmod>
+    <lastmod>2023-10-18T08:17:36.912Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/bruchrechnung.html</loc>
-    <lastmod>2023-10-14T10:57:11.489Z</lastmod>
+    <lastmod>2023-10-18T08:17:38.243Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/distributivgesetz.html</loc>
-    <lastmod>2023-10-14T10:57:11.664Z</lastmod>
+    <lastmod>2023-10-18T08:17:39.811Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/gleichungen.html</loc>
-    <lastmod>2023-10-14T10:57:11.856Z</lastmod>
+    <lastmod>2023-10-18T08:17:41.030Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/kommutativgesetz.html</loc>
-    <lastmod>2023-10-14T10:57:12.046Z</lastmod>
+    <lastmod>2023-10-18T08:17:42.062Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/p-q-Formel.html</loc>
-    <lastmod>2023-10-14T10:57:12.227Z</lastmod>
+    <lastmod>2023-10-18T08:17:43.541Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/potenzrechnung.html</loc>
-    <lastmod>2023-10-14T10:57:12.441Z</lastmod>
+    <lastmod>2023-10-18T08:17:44.736Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/prozentrechnung.html</loc>
-    <lastmod>2023-10-14T10:57:12.642Z</lastmod>
+    <lastmod>2023-10-18T08:17:46.026Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/ungleichungen.html</loc>
-    <lastmod>2023-10-14T10:57:12.839Z</lastmod>
+    <lastmod>2023-10-18T08:17:47.258Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/vorrangsregeln.html</loc>
-    <lastmod>2023-10-14T10:57:13.016Z</lastmod>
+    <lastmod>2023-10-18T08:17:48.416Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/content/rechenregeln/wurzelrechnung.html</loc>
-    <lastmod>2023-10-14T10:57:13.225Z</lastmod>
+    <lastmod>2023-10-18T08:17:49.402Z</lastmod>
+  </url>
+  <url>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/vektoren/vektoren.html</loc>
+    <lastmod>2023-10-18T08:17:56.876Z</lastmod>
+  </url>
+  <url>
+    <loc>https://loelschlaeger.de/mathe-mit-lennart/content/vektoren/vektorraum.html</loc>
+    <lastmod>2023-10-18T08:17:58.072Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/index.html</loc>
-    <lastmod>2023-10-14T10:57:13.586Z</lastmod>
+    <lastmod>2023-10-18T08:19:19.031Z</lastmod>
   </url>
   <url>
     <loc>https://loelschlaeger.de/mathe-mit-lennart/LICENSE.html</loc>
-    <lastmod>2023-10-14T10:57:14.216Z</lastmod>
+    <lastmod>2023-10-18T08:18:05.224Z</lastmod>
   </url>
 </urlset>

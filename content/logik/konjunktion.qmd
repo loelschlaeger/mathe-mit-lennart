@@ -1,0 +1,18 @@
+---
+title: "Konjunktion"
+---
+
+Zwei [Aussagen](aussagen.qmd) $A$ und $B$ lassen sich mithilfe der Konjunktion *und* ($A \land B$) [verknüpfen](verknuepfung.qmd). Bei dieser Verknüpfung ist die Gesamtaussage nur dann wahr, wenn beide Aussagen wahr sind. Andernfalls gilt sie als falsch.
+
+Eine anschauliche Darstellung dieses Konzepts bietet die folgende [Wahrheitstafel](wahrheitstafel.qmd):
+
+| $A$   | $B$   | $A \land B$ |
+| --- | --- | ----- |
+| wahr   | wahr   | wahr     |
+| wahr   | falsch   | falsch     |
+| falsch   | wahr   | falsch     |
+| falsch   | falsch   | falsch     |
+
+Diese Tabelle veranschaulicht, dass die Aussage $A \land B$ nur dann wahr ist, wenn sowohl $A$ als auch $B$ wahr sind. Sie ist hingegen falsch, wenn mindestens eine der beiden Aussagen falsch ist.
+
+Ein Beispiel: Wenn $A$ die Aussage "Die Sonne scheint" darstellt und $B$ die Aussage "Es regnet" repräsentiert, dann ist $A \land B$ die Aussage "Die Sonne scheint und es regnet." Diese Gesamtaussage ist nur wahr, wenn sowohl die Sonne scheint als auch es regnet; sie ist jedoch falsch, wenn eine dieser Aussagen nicht zutrifft.

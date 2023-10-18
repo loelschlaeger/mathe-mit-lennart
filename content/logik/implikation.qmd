@@ -1,0 +1,30 @@
+---
+title: "Implikation"
+---
+
+Zwei [Aussagen](aussagen.qmd) $A$ und $B$ können mittels der Implikation (*wenn...dann* oder $A \Rightarrow B$) [verknüpft](verknuepfung.qmd) werden. Bei dieser Verknüpfung ist die Gesamtaussage wahr, wenn die erste Aussage $A$ falsch ist oder wenn beide Aussagen wahr sind. Sie ist nur dann falsch, wenn $A$ wahr ist, aber $B$ falsch.
+
+::: {.callout-note collapse="true"}
+## Wahrheitstafel
+
+| $A$   | $B$   | $A \Rightarrow B$ |
+| --- | --- | ----- |
+| wahr   | wahr   | wahr     |
+| wahr   | falsch   | falsch     |
+| falsch   | wahr   | wahr     |
+| falsch   | falsch   | wahr     |
+
+Die [Wahrheitstafel](wahrheitstafel.qmd) zeigt, dass die Aussage $A \Rightarrow B$ wahr ist, wenn entweder $A$ falsch ist oder wenn beide Aussagen wahr sind. Sie ist nur dann falsch, wenn $A$ wahr ist und $B$ falsch ist.
+:::
+
+::: {.callout-tip collapse="true"}
+## Ein Beispiel
+
+Wenn $A$ die Aussage "Es regnet" darstellt und $B$ die Aussage "Der Boden ist nass" repräsentiert, dann ist $A \Rightarrow B$ die Aussage "Wenn es regnet, dann ist der Boden nass." Diese Gesamtaussage ist wahr, wenn es nicht regnet oder wenn es regnet und der Boden tatsächlich nass ist. Sie ist jedoch falsch, wenn es regnet, aber der Boden nicht nass ist.
+:::
+
+::: {.callout-warning collapse="true"}
+## Aus Blödsinn kann alles gefolgert werden
+
+Wenn $A$ falsch ist, ist $A \Rightarrow B$ immer richtig. Zum Beispiel, wenn $A$ "die Erde ist eine Scheibe" und $B$ "ich bin der Größte" ist, dann ist die Aussage "wenn die Erde eine Scheibe ist, dann bin ich der Größte" immer richtig. Wenn die Voraussetzung $A$ nie zutrifft, müssen wir uns keine Gedanken über die Folge $B$ machen.
+:::
