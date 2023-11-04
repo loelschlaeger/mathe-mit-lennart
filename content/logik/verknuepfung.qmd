@@ -1,0 +1,13 @@
+---
+title: "Verknüpfungen"
+---
+
+Mehrere [Aussagen](aussagen.qmd) können miteinander *verknüpft* werden. Wenn $A$ und $B$ zwei Aussagen sind, dann ist die Aussage
+
+- "$A$ oder $B$" die [Adjunktion](adjunktion.qmd) von $A$ und $B$,
+
+- "$A$ und $B$" die [Konjunktion](konjunktion.qmd) von $A$ und $B$,
+
+- "wenn $A$ gilt, dann gilt auch $B$" die [Implikation](implikation.qmd) von $A$ und $B$,
+
+- "$A$ gilt genau dann, wenn $B$ gilt" die [Äquivalenz](aequivalenz.qmd) von $A$ und $B$.

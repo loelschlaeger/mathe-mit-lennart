@@ -1,0 +1,14 @@
+---
+title: "Negation"
+---
+
+Eine [Aussage](aussage.qmd) kann *negiert* werden. Die Negation einer Aussage $A$ ist definiert als die Aussage, die wahr ist, wenn $A$ falsch ist und andererseits falsch ist, wenn $A$ wahr ist. Man notiert die Negation mit $\neg A$. 
+
+Wenn zum Beispiel $A$ die Aussage "heute hat es geregnet" ist, dann ist $\neg A$ die Negation "heute hat es nicht geregnet".
+
+In der [Wahrheitstafel](wahrheitstafel.qmd) sieht das so aus:
+
+| $A$      | $\neg A$ |
+| -------- | -------- |
+| wahr     | falsch   |
+| falsch   | wahr     |
