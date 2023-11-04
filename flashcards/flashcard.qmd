@@ -1,0 +1,21 @@
+---
+comments: false
+format: 
+  html:
+    css: style.css
+    anchor-sections: false
+    include-after-body: 
+      - text: |
+          <script src="flashcards.js"></script>
+          <script src="reveal.js"></script>
+---
+
+<body onload = "getRandomCard()">
+<div class = "question"></div>
+<div class = "flashcard-button">
+<button style = "margin:5px" class = "check">Lösung</button>
+<button style = "margin:5px" class = "next">Weiter</button>
+</div>
+<div class = "answer"></div>
+</body>
+

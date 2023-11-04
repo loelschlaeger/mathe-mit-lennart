@@ -1,0 +1,21 @@
+.question{
+  border: solid 0px black;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.answer{
+  border: solid 0px black;
+  text-align: center;
+  margin-top: 30px;
+  display: none;
+}
+
+.flashcard-button{
+  text-align: center;
+  margin-top: 30px;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
